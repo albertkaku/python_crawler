@@ -1,0 +1,24 @@
+# requests lib @ http://www.python-requests.org
+# pip install requests
+#Eg,
+import requests
+r = requests.get("http://www.google.ca")
+r.status_code
+# 200
+r.encoding = 'utf-8'
+r.text
+
+type(r)
+# <class 'requests.models.Response'>
+
+r.headers
+
+
+# Seven methods:
+# requests.request()
+# requests.get()
+# requests.head()
+# requests.post()
+# requests.put()
+# requests.patch()
+# requests.delete()
